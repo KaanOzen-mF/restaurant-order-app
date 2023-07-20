@@ -1,10 +1,63 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-       <link rel="stylesheet" href="index.css">
+    <head>
+       <link rel="stylesheet" href="/index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:wght@400;500&family=Smythe&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     </head>
     <body>
-        <p>Test</p>
-	<script src="index.js"></script>
+        <header>
+            <div class="header">
+                <img src="/images/background.png">
+                <div class="text-container"> 
+                    <h1>Mama's Burger</h1>
+                    <p>The best burgers like yours mom</p>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <section id="meal-part"></section>
+            
+            <section id="order-section">
+                <div id="order-part">
+                    <h2>Your Order</h2>
+                    <div id="orders">
+                        <div id="order-container"></div>
+                        
+                        <div class="line"></div>
+                        
+                        <div id="total-price">
+                            <p>Total Price</p>
+                            <p>-</p>
+                        </div>
+                        
+                    </div>
+                    
+                    <div>
+                        <button id="order-btn">Complete Order</button>
+                    </div> 
+                </div>
+  
+                           
+                <div id="card-details">
+                    <div id="close-btn">X</div>
+                    <p>Enter Card Details</p>
+                    <form id="payment-form">
+                        <input type="text" placeholder="Enter your name" required>
+                        <input type="number" placeholder="Enter card number" required>
+                        <input type="number" placeholder="Enter CVV" required>
+                        <button type="submit" id="pay-btn">Pay</button>
+                    </form>
+                </div>
+                
+                <div id="order-success">
+                    <p>Thanks, Kaan! Your order is on its way!</p>
+                </div>
+                
+            </section>
+        </main>
+	<script src="/index.js" type="module"></script>
     </body>
 </html>
 

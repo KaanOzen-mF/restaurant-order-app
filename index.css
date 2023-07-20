@@ -1,3 +1,212 @@
 body {
     margin: 0;
+    font-family: 'Smythe', cursive;
 } 
+
+/*Header Section Start*/
+.header{
+    position: static;
+}
+
+header img{
+    width: 100%;
+    
+}
+
+.text-container{
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    color: white;
+    text-align: left;
+    font-family: 'Smythe', cursive;
+}
+/*Header Section End*/
+.line{
+    border: 1px solid black;
+    margin: 0px 20px 0px 20px;
+}
+/*Main Section Start*/
+
+/*Meal Section Start*/
+.meal-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.meal-card img{
+    width: 64px;
+    height: 64px;
+}
+
+.meal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.meal-info{
+    display: flex;
+    flex-direction: column;
+    line-height: 0.1px;
+    margin-left: 30px;
+}
+
+.meal-card button{
+    height: 24px;
+    border-radius: 64px;
+}
+
+#item-add-btn:hover{
+    cursor: pointer;
+    background-color: #16DB99;
+    color: #FFFFFF;
+}
+/*Meal Section End*/
+
+/*Order Section Start*/
+
+
+#order-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+    text-align: center;
+    
+}
+
+
+#order-cart{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 28px;
+    align-items: center;
+}
+
+
+#order-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#order-name{
+    font-size: 28px;    
+}
+
+#order-remove{
+    font-size: 18px;
+    color: gray;
+    font-weight: 100;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#order-remove:hover{
+    font-size: 28px;
+}
+
+#total-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 28px;
+    margin: 10px 30px 10px 30px;
+    
+}
+
+#order-btn, #pay-btn{
+    background-color: #16DB99;
+    color: #FFFFFF;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    width: 80%;
+    padding: 10px;
+    margin: 10px 30px 10px 30px;
+    cursor: pointer;
+}
+
+/*Order Section End*/
+
+/*Card Details Start*/
+#card-details{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    top: 50;left: 0;bottom: 0;right: 0;
+    width: 60%;
+    height: 70%;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 10px 10px 131px 50px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 131px 50px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 131px 50px rgba(0,0,0,0.75);
+    padding: 20px;
+}
+
+#card-details input{
+    width: 100%;
+    height: 10%;
+}
+
+#card-details p{
+    font-size: 24px;
+    font-weight: 600;
+    color: black
+}
+
+#payment-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    width: 100%;
+    margin: 8px;
+}
+
+#payment-form input{
+    height: 64px;
+    margin: 8px;
+}
+
+#close-btn{
+    align-self: flex-end;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 64px;
+}
+
+#close-btn:hover{
+    background-color: #16DB99;
+    color: #FFFFFF;
+}
+/*Card Details End*/
+
+
+/*Order Success Start*/
+#order-success{
+    display: none;
+    font-size: 32px;
+    color: #065F46;
+    justify-content: center;
+    align-items: center;
+}
+/*Order Success End*/
+
+/*Main Section End*/
